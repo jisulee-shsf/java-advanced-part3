@@ -29,6 +29,6 @@ public class Person {
     }
 
     public String introduceWithNumber(int number) {
-        return "I am " + name + " my number is " + number;
+        return "I am " + name + ", my number is " + number;
     }
 }
