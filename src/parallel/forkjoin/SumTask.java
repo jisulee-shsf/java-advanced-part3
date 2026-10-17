@@ -35,7 +35,7 @@ public class SumTask extends RecursiveTask<Integer> {
             SumTask leftTask = new SumTask(leftList);
             SumTask rightTask = new SumTask(rightList);
 
-            leftTask.fork();
+            leftTask.fork(); // 공용 풀 사용
             Integer rightResult = rightTask.compute();
 
             Integer leftResult = leftTask.join();
